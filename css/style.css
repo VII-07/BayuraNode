@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.hide {
+  display: none;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/header__background.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__title {
+  font-size: 60px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.header__title-span-1 {
+  color: #3F3F3F;
+}
+
+.header__title-span-2 {
+  color: #DD7703;
+}
+
+.header__button {
+  color: #FFFFFF;
+  font-size: 20px;
+  -webkit-border-radius: 40px;
+          border-radius: 40px;
+  border: 1px solid black;
+  background: black;
+  padding: 15px 25px;
+  cursor: pointer;
+}
+
+.header__button:hover {
+  background: #3F3F3F;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+.list {
+  width: 100%;
+  height: 100vh;
+  padding: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.list__box {
+  background-color: #D1D1D1;
+  width: 100%;
+  height: 80vh;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+}
+
+.list__box-title {
+  margin-bottom: 40px;
+}
+
+.list__box-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  width: 95%;
+  border: 1px solid #FFFFFF;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  padding: 10px 5px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.card:hover {
+  background-color: #F2F2F2;
+}
+
+.add__button {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #525252)), -webkit-gradient(linear, left top, left bottom, color-stop(0, #525252));
+  background: -webkit-linear-gradient(#525252 0 0), -webkit-linear-gradient(#525252 0 0);
+  background: -o-linear-gradient(#525252 0 0), -o-linear-gradient(#525252 0 0);
+  background: linear-gradient(#525252 0 0), linear-gradient(#525252 0 0);
+  background-position: center;
+  -webkit-background-size: 50% 3px,3px 50%;
+          background-size: 50% 3px,3px 50%;
+  /*thickness = 2px, length = 50% (25px)*/
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.add__button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, white)), -webkit-gradient(linear, left top, left bottom, color-stop(0, white));
+  background: -webkit-linear-gradient(white 0 0), -webkit-linear-gradient(white 0 0);
+  background: -o-linear-gradient(white 0 0), -o-linear-gradient(white 0 0);
+  background: linear-gradient(white 0 0), linear-gradient(white 0 0);
+  background-position: center;
+  -webkit-background-size: 50% 3px,3px 50%;
+          background-size: 50% 3px,3px 50%;
+  /*thickness = 2px, length = 50% (25px)*/
+  background-repeat: no-repeat;
+}

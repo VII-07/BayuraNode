@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.hide{
+    display: none;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/header__background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    &__title{
+        font-size: 60px;
+        font-weight: bold;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+        &-span-1{
+            color: #3F3F3F;
+        }
+        &-span-2{
+            color: #DD7703;
+        }
+    }
+    &__button{
+        color:  #FFFFFF;
+        font-size: 20px;
+        border-radius: 40px;
+        border: 1px solid black;
+        background: black;
+        padding: 15px 25px;
+        cursor: pointer;
+    }
+    &__button:hover{
+        background: #3F3F3F;
+    }
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+}
+.list{
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    &__box{
+        background-color: #D1D1D1;
+        width: 100%;
+        height: 80vh;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        &-title{
+            margin-bottom: 40px;
+        }
+        &-content{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+.card{
+    width: 95%;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    padding: 10px 5px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.card:hover{
+    background-color: #F2F2F2;
+}
+
+.add__button{
+    display:inline-block;
+    width:60px;
+    height:60px;
+    background:
+    linear-gradient(rgb(82, 82, 82) 0 0),
+    linear-gradient(rgb(82, 82, 82) 0 0);
+    background-position:center;
+    background-size: 50% 3px,3px 50%; /*thickness = 2px, length = 50% (25px)*/
+    background-repeat:no-repeat;
+    cursor: pointer;
+}
+
+.add__button:hover{
+    background:
+    linear-gradient(rgb(255, 255, 255) 0 0),
+    linear-gradient(rgb(255, 255, 255) 0 0);
+    background-position:center;
+    background-size: 50% 3px,3px 50%; /*thickness = 2px, length = 50% (25px)*/
+    background-repeat:no-repeat;
+}
