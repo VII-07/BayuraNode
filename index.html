@@ -7,45 +7,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <title>MyProject</title>
 </head>
 <body>
     <header>
         <h1 class="header__title"> Welcom to <span class="header__title-span-1">Bayura</span><span class="header__title-span-2">Note</span></h1>
-        <button class="header__button">Write down</button>
+        <button id="btn-js" class="header__button">Write down</button>
+        <p class="Anna">This program is written in honor of Anna Lytvynchuk</p>
     </header>
 
-    <section class="list">
+    <section id="list" class="list hide">
         <div class="wrapper">
             <div class="list__box">
                 <h2 class="list__box-title">Your pages</h2>
+                <div id="add_btn" class="add__button"></div>
                 <div class="list__box-content">
-                    <div class="card">
+                    <!-- <div class="card">
                         <h3 class="card__title">Your card</h3>
                         <p class="card__description">Your description</p>
-                    </div>
-                    <div class="add__button"></div>
+                    </div> -->
                 </div>
             </div>
         </div>
     </section>
 
-<section class="note">
-    <div class="note__container">
-        <input class="note__title" type="text" placeholder="Enter the title">
-        <input class="note__description" type="text" placeholder="Enter a description">
-        <div class="instrument">
-            <button class="text__button">АA</button>
-            <button class="text__button">Num List</button>
-            <button class="text__button">Dot list</button>
+<section id="note" class="note hide">
+    <div class="wrapper">
+        <div class="note__container">
+            <div id="back__arrow">Back</div>
+            <input class="note__title" type="text" placeholder="Enter the title">
+            <input class="note__description" type="text" placeholder="Enter a description">
+            <div class="instrument">
+                <button class="text__button">aA</button>
+                <button class="text__button">Aa</button>
+              
+            </div>
+            <textarea class="IntroductionField" type="text" placeholder="Write down here..."></textarea>
+            <button id="save_btn" class="save text__button">Save</button>
         </div>
-        <textarea class="IntroductionField" type="text" placeholder="Запишіть сюди :)"></textarea>
-        <button class="save text__button">Save</button>
     </div>
 </section>
 
 
-    <script src="script.js"></script>
+    <script type='text/javascript' src="script.js"></script>
 </body>
 </html>
