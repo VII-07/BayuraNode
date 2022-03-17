@@ -283,6 +283,21 @@ header {
 @media (min-width: 400px) {
   .header__title {
     width: 90%;
-    font-size: 20px;
+    font-size: 40px;
+    text-align: center;
+  }
+  .list__box-title {
+    font-size: 25px;
+  }
+  .note__title {
+    width: 90%;
+    height: 10%;
+  }
+  .note__description {
+    width: 80%;
+    height: 10%;
+  }
+  .IntroductionField {
+    width: 100%;
   }
 }
