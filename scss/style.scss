@@ -198,7 +198,7 @@ header{
     font-size: 25px;
     border-radius: 10px;   
 }
-@media (min-width: 400px){
+@media (max-width: 400px){
     .header__title {
         width: 90%;
         font-size: 40px;
@@ -218,5 +218,4 @@ header{
       .IntroductionField{
         width: 100%;
       }
-
 }
