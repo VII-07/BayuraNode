@@ -1,30 +1,25 @@
-$secList = document.getElementById('list');
-$header = document.querySelector('header');
-$secNote = document.getElementById('note')
+const secList = document.getElementById('list');
+const header = document.querySelector('header');
+const secNote = document.getElementById('note')
 
-headerBtn = document.getElementById('btn-js');
-addBtn = document.getElementById('add_btn');
-saveBtn = document.getElementById('save_btn');
-backBnt = document.getElementById('back__arrow')
+const headerBtn = document.getElementById('btn-js');
+const addBtn = document.getElementById('add_btn');
+const saveBtn = document.getElementById('save_btn');
+const backBnt = document.getElementById('back__arrow')
 
-a = document.getElementsByClassName('note__title');
-b = document.getElementsByClassName('note__description');
-c = document.getElementsByClassName('IntroductionField');
-v = document.getElementsByClassName('text__button');
-noteTitle = a[0];
-noteDesc = b[0];
-noteField = c[0];
-capsUp = v[0];
-capsDown = v[1];
+const noteTitle = document.querySelector('.note__title');
+const noteDesc = document.querySelector('.note__description');
+const noteField = document.querySelector('.IntroductionField');
+const capsUp = document.querySelector('.text__button');
+const capsDown = document.querySelector('.btn-js');
 
-
-var savedInformation = [];
+const savedInformation = [];
 
 headerBtn.onclick = function() {
-    nextSection($header,$secList);
+    nextSection(header,secList);
 };
 addBtn.addEventListener('click', () => {
-    nextSection($secList,$secNote);
+    nextSection(secList,secNote);
     clearZone();
 });
 saveBtn.addEventListener('click',() => {
@@ -37,7 +32,7 @@ capsDown.addEventListener('click', () => {
     noteField.value = noteField.value.toLowerCase();
 });
 backBnt. addEventListener('click', () => {
-    nextSection($secNote, $secList);
+    nextSection(secNote, secList);
 })
 
 
@@ -48,12 +43,12 @@ function nextSection(hide, show) {
     show = show.classList.remove('hide');
 };
 function save() {
-    if(noteTitle.value.trim().length === 0 && noteDesc.value.trim().length === 0 && noteField.value.trim().length === 0){
+    if(!noteTitle.value.trim().length && !noteDesc.value.trim().length && !noteField.value.trim().length){
         alert('You have not filled any fields.')
     }
     else {
         savedInfo();
-        nextSection($secNote,$secList);
+        nextSection(secNote,secList);
         addCard();
     }
 };
